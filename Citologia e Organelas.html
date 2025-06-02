@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citologia e Organelas Celulares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: darkgreen;
+        }
+        header {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {  
+            padding: 20px;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .organelas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .organelas div {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        .funcao {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Citologia e Organelas Celulares</h1>
+    </header>
+    <main>
+     <center>
+       <section>
+            <h2>O que é Citologia?</h2>
+            <p>Citologia é o estudo das células, que são as menores unidades da vida. Ela analisa a estrutura, as funções e os processos das células, como a produção de energia, a síntese de proteínas e a divisão celular. 
+  As células podem ser procariontes, sem núcleo definido, como as bactérias, ou eucariontes, com núcleo, como as células de animais e plantas. 
+   A citologia é fundamental para entender como os seres vivos funcionam, como surgem doenças e para o desenvolvimento de tratamentos médicos e pesquisas científicas.
+</p>
+      </section>
+    </center>
+      
+        <section>
+            <h2>Tipos de Células</h2>
+            <ul>
+                <li><strong>Células Procariontes:</strong> Exemplo: Células de bactérias e cianobactérias.<br>
+
+<strong>Características:</strong> <br>
+
+Não possuem núcleo definido (o DNA fica solto no citoplasma).<br>
+
+Não têm organelas membranosas (como mitocôndrias ou complexo de Golgi).<br>
+
+Estrutura mais simples..</li> <br> <br>
+                <li><strong>Células Eucariontes:</strong> 
+                    São mais complexas e possuem núcleo. Estão presentes em animais, plantas, fungos e protozoários. <br>
+    <strong>Exemplos:</strong> <br>
+
+<strong>A) Células animais:</strong> <br>
+Exemplo 1: Célula muscular – especializada em contração.<br>
+
+Exemplo 2: Neurônio – transmite impulsos nervosos.<br>
+
+Exemplo 3: Hemácia (glóbulo vermelho) – transporta oxigênio.<br>
+
+Exemplo 4: Célula epitelial – reveste órgãos e estruturas do corpo.<br><br>
+
+<strong>B) Células vegetais</strong> <br>
+Exemplo 1: Célula do parênquima clorofiliano – realiza fotossíntese.<br>
+
+Exemplo 2: Célula do xilema – conduz água nas plantas.<br>
+
+Exemplo 3: Célula da epiderme vegetal – reveste a superfície da planta.<br> <br>
+
+</li>
+                <li><strong>Células de fungos</strong> Exemplo: Células da levedura (como a Saccharomyces cerevisiae, usada na fermentação do pão e da cerveja).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Organelas Celulares</h2>
+            <div class="organelas">
+                <div>
+                    <h3>Mitocôndria</h3>
+                    <img src=https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/mitocondria-do-ser-humano-biologia.jpg alt="Mitocôndria">
+                    <button onclick="mostrarFuncao(this)">Ver função</button>
+                    <p class="funcao">Responsável pela produção de energia (ATP).</p>
+                </div>
+                <div>
+                    <h3>Cloroplasto</h3>
+                    <img src=https://s1.static.brasilescola.uol.com.br/be/conteudo/images/observe-estrutura-basica-um-cloroplasto-585943723cdab.jpg alt="Cloroplasto">
+                    <button onclick="mostrarFuncao(this)">Ver função</button>
+                    <p class="funcao">Realiza a fotossíntese. Presente apenas em células vegetais.</p>
+                </div>
+                <div>
+                    <h3>Ribossomo</h3>
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtHhrhOY7KC4CqEiHPLIrxu8RvVrg5XgYqRQ&s alt="Ribossomo">
+                    <button onclick="mostrarFuncao(this)">Ver função</button>
+                    <p class="funcao">Produz proteínas. Presente em todos os tipos de células.</p>
+                </div>
+                <div>
+                    <h3>Lisossomo</h3>
+                    <img src="https://static.todamateria.com.br/upload/li/so/lisossomo.jpg" alt="Lisossomo">
+                    <button onclick="mostrarFuncao(this)">Ver função</button>
+                    <p class="funcao">Faz a digestão celular. Comum em células animais.</p>
+                </div>
+                <div>
+                    <h3>Retículo Endoplasmático</h3>
+                    <img src=https://s1.static.brasilescola.uol.com.br/be/2020/10/reticulo-endoplasmatico.jpg alt="Retículo Endoplasmático">
+                    <button onclick="mostrarFuncao(this)">Ver função</button>
+                    <p class="funcao">Transporte e síntese de proteínas e lipídios.</p>
+                </div>
+                <div>
+                    <h3>Complexo de Golgi</h3>
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUVFpGA_9dfH8P0ckLhzWNoomSKNgOGZgLNw&s alt="Complexo de Golgi">
+                    <button onclick="mostrarFuncao(this)">Ver função</button>
+                    <p class="funcao">Armazena, modifica e exporta substâncias da célula.</p>
+                </div>
+            </div>
+            <br> <br> <br>
+            <center>
+            <button
+  style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+  onclick="location.href='quiz.html'">
+  Clique aqui para o Quiz
+</button>
+</center>
+        </section>
+    </main>
+
+    <script>
+        function mostrarFuncao(botao) {
+            var funcao = botao.nextElementSibling;
+            if (funcao.style.display === "none" || funcao.style.display === "") {
+                funcao.style.display = "block";
+            } else {
+                funcao.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
